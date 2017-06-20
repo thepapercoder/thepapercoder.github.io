@@ -1,13 +1,13 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        Son Giang Nguyen
+tagline:      My personal GitHub Pages
 baseurl:      ""
-paginate:     1
+paginate:     5
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Son Giang Nguyen
+  url:        https://github.com/thepapercoder
 
 # Gems
 gems:
