@@ -1,5 +1,6 @@
 ---
 layout: with_tool_bar
+comments: true
 ---
 <section class="content">
   {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
@@ -24,6 +25,7 @@ layout: with_tool_bar
       var disqus_config = function () {
         this.page.url = '{{ page.url | absolute_url }}';
         this.page.identifier = '{{ page.url | absolute_url }}';
+        console.log("Disqus config", this.page.url, this.page.identifier)
       };
       (function () {
         var d = document, s = d.createElement('script');
