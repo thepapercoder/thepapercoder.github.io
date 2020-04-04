@@ -1,7 +1,4 @@
-source 'https://rubygems.org'
-gemspec
+# frozen_string_literal: true
 
-gem 'jekyll'
-gem 'jekyll-paginate'
-gem 'kramdown'
-gem 'pygments.rb'
+source "https://rubygems.org"
+gemspec

@@ -1,0 +1,11 @@
+---
+layout: with_tool_bar
+---
+<section class="content">
+  {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+  <div class="post-container">
+    <div class="post">
+      {{ content }}
+    </div>
+  </div>
+</section>

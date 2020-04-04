@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  
-  {% include head.html %}
-
+<html lang="en">
+  <head>
+    {%- include head.html -%}
+  </head>
   <body>
-    {% include page-header.html %}
-
-    <section class="main-content">
-      
+    <main class="container">
       {{ content }}
+    </main>
+    {%- if site.plainwhite.analytics_id -%}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      {% include page-footer.html %}
-
-    </section>
-
+        gtag('config', '{{ site.plainwhite.analytics_id }}');
+      </script>
+    {%- endif -%}
   </body>
 </html>
