@@ -15,7 +15,7 @@ $leftWidth: 220px;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lucida Console", Monaco, monospace;
   font-size: 16px;
   line-height: 1.2em;
   margin: 0;
@@ -70,6 +70,9 @@ main {
       max-width: calc(100% - 360px);
       margin: auto;
       width: 100%;
+    }
+    @media screen and (max-width: $mobileW) {
+      padding: 60px 0;
     }
   }
   .home-content {
@@ -146,7 +149,7 @@ main {
 
     a {
       display: block;
-      font-family: 'Merriweather';
+      font-family: "Lucida Console", Monaco, monospace;
       text-align: center;
       padding: 1rem 0;
       text-decoration: none;
@@ -224,7 +227,7 @@ main {
   padding-left: 30px;
 }
 .post {
-  font-family: "Merriweather", sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: 300;
   color: #222;
   line-height: 1.9em;
@@ -260,9 +263,16 @@ main {
   position: fixed;
   max-width: 45px;
   max-height: 45px;
-  left: 30px;
-  top: 25px;
-  border: 3px solid #080808;
+  border: 3px solid #b5b0b0;
   border-radius: 48%;
   overflow: hidden;
+
+  @media screen and (min-width: $mobileW + 1) {
+    left: 30px;
+    top: 25px;
+  }
+  @media screen and (max-width: $mobileW) {
+    left: 15px;
+    top: 15px;
+  }
 }
