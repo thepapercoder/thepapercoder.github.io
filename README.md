@@ -17,6 +17,7 @@ Hope this will be helpful!
 ## How to run dev
 - Install ruby by follow [this](https://jekyllrb.com/docs/).
 - Clone this project
+- Run `bundle install` to install dependencies
 - Run `bundle exec jekyll serve` to run development server
 
 *Credit - This page using plainwhite theme from [thelehhman](https://github.com/thelehhman/plainwhite-jekyll)
